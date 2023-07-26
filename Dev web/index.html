@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>de matka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><a href="#" class="logo">de matka<span>.</span></a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>   
+    <ul class="navigation">
+        <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+        <li><a href="#expert" onclick="toggleMenu();">Expert</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+    </ul>    
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Always Choose Chai</h2>
+            <p>To the people of nepal,Chai is more than just a simple cup of tea.Its thick,sweet nectar is foundational to the rhythms of daily life.
+                A symbol of hospitality,Chai evokes a sense of identity.It connects people to their heritage and,to many,is a lasting source of habitual
+                comfort.Tea contains antioxidants.Tea has less caffeine than coffee. Tea may reduce your risk of heart attack and stroke.
+                Tea may help with weight loss.Tea may help protect your bones.Tea may keep your smile bright.</p>
+                <a href="#" class="btn">Our menu</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="row">
+        <div class="col50">
+        <h2 class="titletext"><span class="td">A</span>bout Us</h2>
+        <p>de matka is a tea shop that only serves beverages and bakery items, with an amicable atmosphere to spend time with your close ones.
+            We serve several varieties of tea which will surely spice up the conversations of the consumers.<br><br>The delightful and unique taste conjure an everlasting impression.
+            We will keep on evolving and coming up with new varieties of homemade tea. As the virtual world has created impacted personal life Chiya Ghar indulges communication between people.</p>   
+        </div>
+        <div class="col50">
+        <div class="imgBx">
+        <img src="states.jpg" alt="saying">
+        </div>
+        </div>
+        </div>         
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="title">
+        <h2 class="titletext">Our<span> M</span>enu</h2>
+        <p>What ever you want.</p>
+        </div>
+        <div class="content">
+        <div class="box">
+        <div class="imgBx">
+         <img src="menu.webp" alt="">
+         </div>
+         <div class="text">
+         <h3>Special Chiya</h3>
+         </div>
+         </div>
+         <div class="box">
+            <div class="imgBx">
+             <img src="chai.jpg" alt="">
+             </div>
+             <div class="text">
+             <h3>Masala chiya</h3>
+             </div>  
+             </div>
+             <div class="box">
+                <div class="imgBx">
+                 <img src="smok.jpg" alt="">
+                 </div>
+                 <div class="text">
+                 <h3>cigarettes</h3>
+                 </div>
+             </div>
+             </div>
+             <div class="title">
+                 <a href="#" class="btn">View All</a>
+                </div>
+    </section>
+
+ <section class="expert" id="expert">
+     <div class="title">
+         <h2 class="titletext">Our kitchen<span> E</span>xpert</h2>
+         <p>What ever you want.</p>
+     </div>
+     <div class="content">
+        <div class="box">
+            <div class="imgBx">
+              <img src="chef1.jpg" alt="">
+           </div>
+           <div class="text">
+               <h3>Someone famous</h3>
+           </div>
+        </div>
+        <div class="box">
+            <div class="imgBx">
+              <img src="chef2.webp" alt="">
+           </div>
+           <div class="text">
+               <h3>Someone famous</h3>
+           </div>
+        </div>
+        <div class="box">
+            <div class="imgBx">
+              <img src="chef3.jpg" alt="">
+           </div>
+           <div class="text">
+               <h3>Someone famous</h3>
+           </div>
+        </div>
+        <div class="box">
+            <div class="imgBx">
+              <img src="chef1.jpg" alt="">
+           </div>
+           <div class="text">
+               <h3>Someone famous</h3>
+           </div>
+        </div>
+ </section>
+
+ <section class="contact" id="contact">
+    <div class="title">
+        <h2 class="titletext"><span>C</span>ontact Us</h2>
+        <p>Easy to asscess.</p>
+    </div>
+    <div class="contactform">
+        <h3>Send Message</h3>
+        <div class="inputBox">
+            <input type="text" placeholder="Name">
+        </div>
+        <div class="inputBox">
+            <input type="text" placeholder="Email">
+        </div>
+        <div class="inputBox">
+            <textarea placeholder="what ever you want"></textarea>
+        </div>
+        <div class="inputBox">
+            <input type="submit" value="Send">
+        </div>
+     </div>   
+ </section>
+ <div class="copyrightText">
+     <p>Copyright 2022 <a href="#">TD</a>. All right Reserved</p>
+ </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenuO(){
+            const menuToggle = document.querySelector('menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
